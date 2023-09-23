@@ -1,0 +1,61 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .data:
+
+0000000000004020 <__data_start>:
+    4020:	00 00                	add    BYTE PTR [rax],al
+    4022:	00 00                	add    BYTE PTR [rax],al
+    4024:	00 00                	add    BYTE PTR [rax],al
+    4026:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004028 <__dso_handle>:
+    4028:	28 40 00             	sub    BYTE PTR [rax+0x0],al
+    402b:	00 00                	add    BYTE PTR [rax],al
+    402d:	00 00                	add    BYTE PTR [rax],al
+    402f:	00                 	add    BYTE PTR [rdx],dl
+
+0000000000004030 <byte>:
+    4030:	12 00                	adc    al,BYTE PTR [rax]
+
+0000000000004032 <word>:
+    4032:	34 12                	xor    al,0x12
+
+0000000000004034 <dword>:
+    4034:	78 56                	js     408c <_end+0x24>
+    4036:	34 12                	xor    al,0x12
+
+0000000000004038 <qword>:
+    4038:	ef                   	out    dx,eax
+    4039:	cd ab                	int    0xab
+    403b:	89 67 45             	mov    DWORD PTR [rdi+0x45],esp
+    403e:	23 01                	and    eax,DWORD PTR [rcx]
+
+0000000000004040 <dqword1>:
+    4040:	ef                   	out    dx,eax
+    4041:	cd ab                	int    0xab
+    4043:	89 67 45             	mov    DWORD PTR [rdi+0x45],esp
+    4046:	23 01                	and    eax,DWORD PTR [rcx]
+    4048:	00 00                	add    BYTE PTR [rax],al
+    404a:	00 00                	add    BYTE PTR [rax],al
+    404c:	00 00                	add    BYTE PTR [rax],al
+    404e:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004050 <dqword2>:
+    4050:	00 00                	add    BYTE PTR [rax],al
+    4052:	00 00                	add    BYTE PTR [rax],al
+    4054:	00 00                	add    BYTE PTR [rax],al
+    4056:	00 00                	add    BYTE PTR [rax],al
+    4058:	ef                   	out    dx,eax
+    4059:	cd ab                	int    0xab
+    405b:	89 67 45             	mov    DWORD PTR [rdi+0x45],esp
+    405e:	23 01                	and    eax,DWORD PTR [rcx]
+
+Disassembly of section .bss:
+
+0000000000004060 <completed.0>:
+    4060:	00 00                	add    BYTE PTR [rax],al
+    4062:	00 00                	add    BYTE PTR [rax],al
+    4064:	00 00                	add    BYTE PTR [rax],al
+    4066:	00 00                	add    BYTE PTR [rax],al
