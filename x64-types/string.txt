@@ -1,0 +1,45 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .data:
+
+0000000000004020 <__data_start>:
+    4020:	00 00                	add    BYTE PTR [rax],al
+    4022:	00 00                	add    BYTE PTR [rax],al
+    4024:	00 00                	add    BYTE PTR [rax],al
+    4026:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004028 <__dso_handle>:
+    4028:	28 40 00             	sub    BYTE PTR [rax+0x0],al
+    402b:	00 00                	add    BYTE PTR [rax],al
+    402d:	00 00                	add    BYTE PTR [rax],al
+    402f:	00                 	add    BYTE PTR [rdx],dl
+
+0000000000004030 <a8>:
+    4030:	12 34              	adc    dh,BYTE PTR [rsp+rsi*1]
+
+0000000000004032 <a16>:
+    4032:	34 12                	xor    al,0x12
+    4034:	78 56                	js     408c <_end+0x34>
+    4036:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004038 <a32>:
+    4038:	78 56                	js     4090 <_end+0x38>
+    403a:	34 12                	xor    al,0x12
+    403c:	f0 de bc 9a    	lock fidivr WORD PTR [rdx+rbx*4-0x65432110]
+    4043:	 
+
+0000000000004040 <a64>:
+    4040:	f0 de bc 9a 78 56 34 	lock fidivr WORD PTR [rdx+rbx*4+0x12345678]
+    4047:	12 
+    4048:	f0 de bc 9a 78 56 34 	lock fidivr WORD PTR [rdx+rbx*4+0x12345678]
+    404f:	12 
+
+Disassembly of section .bss:
+
+0000000000004050 <completed.0>:
+    4050:	00 00                	add    BYTE PTR [rax],al
+    4052:	00 00                	add    BYTE PTR [rax],al
+    4054:	00 00                	add    BYTE PTR [rax],al
+    4056:	00 00                	add    BYTE PTR [rax],al

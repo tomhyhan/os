@@ -1,0 +1,9 @@
+clang <FILE>
+
+objdump -z -M intel -S -D -j .data -j .bss <object
+file>
+
+readelf -x .data hello
+
+objdump --no-show-raw-insn -M intel -S -D <object
+file> 

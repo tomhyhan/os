@@ -1,0 +1,33 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .data:
+
+0000000000004018 <__data_start>:
+    4018:	00 00                	add    BYTE PTR [rax],al
+    401a:	00 00                	add    BYTE PTR [rax],al
+    401c:	00 00                	add    BYTE PTR [rax],al
+    401e:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004020 <__dso_handle>:
+    4020:	20 40 00             	and    BYTE PTR [rax+0x0],al
+    4023:	00 00                	add    BYTE PTR [rax],al
+    4025:	00 00                	add    BYTE PTR [rax],al
+    4027:	00                 	add    BYTE PTR [rdx],dl
+
+0000000000004028 <a2>:
+    4028:	12 34 56             	adc    dh,BYTE PTR [rsi+rdx*2]
+    402b:	78                 	js     403f <__TMC_END__+0x7>
+
+000000000000402c <a3>:
+    402c:	12 34 56             	adc    dh,BYTE PTR [rsi+rdx*2]
+    402f:	78 9a                	js     3fcb <_DYNAMIC+0x1a3>
+    4031:	bc                   	.byte 0xbc
+    4032:	de ff                	fdivp  st(7),st
+
+Disassembly of section .bss:
+
+0000000000004034 <completed.0>:
+    4034:	00 00                	add    BYTE PTR [rax],al
+    4036:	00 00                	add    BYTE PTR [rax],al

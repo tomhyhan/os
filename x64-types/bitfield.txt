@@ -1,0 +1,48 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .data:
+
+0000000000004018 <__data_start>:
+    4018:	00 00                	add    BYTE PTR [rax],al
+    401a:	00 00                	add    BYTE PTR [rax],al
+    401c:	00 00                	add    BYTE PTR [rax],al
+    401e:	00 00                	add    BYTE PTR [rax],al
+
+0000000000004020 <__dso_handle>:
+    4020:	20 40 00             	and    BYTE PTR [rax+0x0],al
+    4023:	00 00                	add    BYTE PTR [rax],al
+    4025:	00 00                	add    BYTE PTR [rax],al
+    4027:	00               	add    BYTE PTR [rdx+rdx*1],dh
+
+0000000000004028 <ns>:
+    4028:	34 12                	xor    al,0x12
+    402a:	00 00                	add    BYTE PTR [rax],al
+    402c:	bc 9a 00 00 34       	mov    esp,0x3400009a
+    4031:	12 00                	adc    al,BYTE PTR [rax]
+    4033:	00 78 56             	add    BYTE PTR [rax+0x56],bh
+    4036:	34 12                	xor    al,0x12
+    4038:	94                   	xchg   esp,eax
+    4039:	00 00                	add    BYTE PTR [rax],al
+    403b:	00               	add    BYTE PTR [rax+0x56],bh
+
+000000000000403c <i>:
+    403c:	78 56                	js     4094 <__TMC_END__+0x44>
+    403e:	34 12                	xor    al,0x12
+
+0000000000004040 <bf>:
+    4040:	12 34 56             	adc    dh,BYTE PTR [rsi+rdx*2]
+    4043:	78                 	js     4057 <__TMC_END__+0x7>
+
+0000000000004044 <bf2>:
+    4044:	12 34 56             	adc    dh,BYTE PTR [rsi+rdx*2]
+    4047:	78 05                	js     404e <_edata+0x2>
+    4049:	00 00                	add    BYTE PTR [rax],al
+    404b:	00                   	.byte 0x0
+
+Disassembly of section .bss:
+
+000000000000404c <completed.0>:
+    404c:	00 00                	add    BYTE PTR [rax],al
+    404e:	00 00                	add    BYTE PTR [rax],al
