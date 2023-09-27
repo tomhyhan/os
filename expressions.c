@@ -1,6 +1,8 @@
+#include <stdio.h>
+
 int expr(int i, int j) {
-  int mul = i * j;
-  return 0;
+ int logical_and = (i || j);
+       return 0;
 }
 
 int main(int argc, char *argv[]) {
