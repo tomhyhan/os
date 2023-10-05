@@ -1,0 +1,36 @@
+
+File: a.out
+
+String dump of section '.strtab':
+  [     1]  Scrt1.o
+  [     9]  __abi_tag
+  [    13]  crtstuff.c
+  [    1e]  deregister_tm_clones
+  [    33]  __do_global_dtors_aux
+  [    49]  completed.0
+  [    55]  __do_global_dtors_aux_fini_array_entry
+  [    7c]  frame_dummy
+  [    88]  __frame_dummy_init_array_entry
+  [    a7]  adder.c
+  [    af]  main.local_variable
+  [    c3]  __FRAME_END__
+  [    d1]  _DYNAMIC
+  [    da]  __GNU_EH_FRAME_HDR
+  [    ed]  _GLOBAL_OFFSET_TABLE_
+  [   103]  __libc_start_main@GLIBC_2.34
+  [   120]  _ITM_deregisterTMCloneTable
+  [   13c]  _edata
+  [   143]  _fini
+  [   149]  printf@GLIBC_2.2.5
+  [   15c]  __data_start
+  [   169]  __gmon_start__
+  [   178]  __dso_handle
+  [   185]  _IO_stdin_used
+  [   194]  _end
+  [   199]  __bss_start
+  [   1a5]  main
+  [   1aa]  __TMC_END__
+  [   1b6]  _ITM_registerTMCloneTable
+  [   1d0]  __cxa_finalize@GLIBC_2.2.5
+  [   1eb]  _init
+
