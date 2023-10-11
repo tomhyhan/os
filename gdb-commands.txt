@@ -1,0 +1,16 @@
+info target => prints info on the target
+maint info sections => extra information on program sections
+info functions => list all function names and thier loaded addresses
+info variables => lists all global and static variable names
+disassemble main => generate assembly code /s-> source /r -> row hex values
+x/20b main => row content of main in range 
+r => running the current program
+b => setting break point, 
+  b 3 -> at a line, 
+  b main-> at a function
+  print main, then b *0x400526 -> at a address
+  b hello.c:3 -> at a filename
+
+ni/ si/ until/ finish
+bt/up/down
+info registers
