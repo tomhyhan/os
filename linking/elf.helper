@@ -1,0 +1,5 @@
+$ readelf -h hello => elf header
+$ readelf -S hello => section header
+readelf -x <section name|section number> <file> => content of each section as
+a hexdump
+ readelf -s hello => symbol table
