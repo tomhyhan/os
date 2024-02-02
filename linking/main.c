@@ -1,4 +1,5 @@
 int i;
+int j;
 void foo();
 
 int main(void) {

@@ -1,0 +1,6 @@
+objdump -z -M intel -S -D -j .data -j .bss <objectfile>
+: create assembly code with .data and .bss section
+
+readelf -x .data <file>
+: read elf file .data section in hexdump mode
+
