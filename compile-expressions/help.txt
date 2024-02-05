@@ -1,0 +1,1 @@
+objdump --no-show-raw-insn -M i386,intel -S -D a.out > test.txt
