@@ -24,8 +24,19 @@ bootdisk: $(BOOTLOADER_OBJS)
 clean:
 	rm $(DISK_IMG) $(BOOTLOADER) $(OS)
 
-# bootloader:
-# 	nasm -f bin bootloader.asm -o bootloader.o
+.PHONY: bt
+bt:
+	nasm -f bin bootloader.asm -o bootloader
+	nasm -f bin sample.asm -o sample
+
+.PHONY: dd
+dd:
+	dd conv=notrunc if=bootloader of=disk.img bs=512 count=1 seek=0
+	dd if=sample of=disk.img bs=512 count=1 seek=1
+
+.PHONY: cc
+cc:
+	rm bootloader sample
 
 # kernel:
 # 	# nasm -f bin sample.asm -o kernel.o
