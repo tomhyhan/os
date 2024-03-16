@@ -16,3 +16,5 @@ layout reg
 qemu-system-i386 -machine q35 -fda disk.img -gdb tcp::26000 -S
 qemu-system-i386 -machine q35 -drive file=disk.img,format=raw
 qemu-system-i386 -machine q35 -fda disk.img
+
+    .text 0x600: ALIGN(0x100) { *(.text) } : code

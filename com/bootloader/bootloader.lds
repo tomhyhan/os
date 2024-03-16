@@ -1,15 +1,16 @@
+OUTPUT(bootloader);
+
 PHDRS
 {
-    headers PT_PHDR FILEHDR PHDRS AT(0x500);
-    code PT_LOAD FILEHDR PHDRS FLAGS(0x1 | 0x2 | 0x4);
+  headers PT_NULL;
+  text PT_LOAD FILEHDR PHDRS ;
+  data PT_LOAD ;
 }
 
-SECTIONS 
+
+SECTIONS
 {
-    . = 0x10000;
-    .text : { *(.text) } : code
-    . = 0x8000000;
-    .data : { *(.data) }
-    .bss : { *(.bss) }
-    /DISCARD/ : { *(.eh_frame) }
+  . = SIZEOF_HEADERS;
+  .text 0x7c00:  {  *(.text)  } :text
+  .data :  {  *(.data)  } :data
 }
